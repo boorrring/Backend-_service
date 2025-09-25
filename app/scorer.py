@@ -2,14 +2,15 @@ import pandas as pd
 from .storage import datastore
 from .ai_service import get_ai_intent # Import the new AI service
 
-# --- Keep the existing code from Step 4 here ---
+
 # Define points for the rule-based layer
 ROLE_POINTS = {"decision maker": 20, "influencer": 10}
 INDUSTRY_POINTS = {"exact": 20, "adjacent": 10}
 COMPLETENESS_POINTS = 10
 
+
+# Function to calculate rule-based score for a single lead
 def calculate_rule_score(lead, ideal_use_case):
-    # ... (this function remains unchanged)
     score = 0
     lead_role = lead.get('role', '').lower()
     if 'head' in lead_role or 'vp' in lead_role or 'director' in lead_role or 'c-level' in lead_role:
@@ -26,8 +27,7 @@ def calculate_rule_score(lead, ideal_use_case):
         score += COMPLETENESS_POINTS
     return score
 
-# --- Add the new pipeline function below ---
-
+#
 def run_scoring_pipeline():
     """
     Main function to score all uploaded leads.
