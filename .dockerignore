@@ -5,10 +5,8 @@
 
 # Docker files and test data
 Dockerfile
-leads.csv
-offer.json
-README.md
-
+test_files/offer.json
+test_files/leads.csv
 # Python cache and virtual environment
 
 __pycache__
