@@ -5,7 +5,7 @@ from config import GEMINI_API_KEY
 # Configure the Gemini API client
 try:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 except Exception as e:
     print(f"Error configuring Gemini API: {e}")
     model = None
