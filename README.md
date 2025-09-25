@@ -9,8 +9,6 @@ This project is an intelligent backend service designed to qualify and score sal
 * **AI:** Google Gemini API
 * **Data Handling:** Pandas
 * **Containerization:** Docker
-* **Production Server:** Gunicorn
-
 ***
 ## Getting Started
 
@@ -109,3 +107,26 @@ Use your browser or curl to download the final report.
 ```bash
 curl -X GET http://127.0.0.1:5000/results/download
 ```
+
+
+***
+## API Usage
+
+You can interact with the live API using a tool like `curl` or Postman .
+
+Deployment URL : https://backend-service-api-wmkq.onrender.com/
+
+
+### 1. Set the Offer Details
+Upload your product/offer information.
+Use following commands
+```bash
+curl -X POST -H "Content-Type: application/json" -d @test_files/offer.json https://backend-service-api-wmkq.onrender.com/offer
+curl -X POST -F "file=@test_files/leads.csv" https://backend-service-api-wmkq.onrender.com/leads/upload
+curl -X POST https://backend-service-api-wmkq.onrender.com/score
+curl -X GET https://backend-service-api-wmkq.onrender.com/results
+```
+## Important Note
+
+This project is deployed on a free-tier cloud service for demonstration purposes. As a result, the backend may not be live when you try to access it. If the service is down and you wish to test the functionality, please follow the local installation or Docker instructions above.
+
