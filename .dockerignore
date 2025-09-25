@@ -1,0 +1,16 @@
+# Git and environment files
+.git
+.gitignore
+.env
+
+# Docker files and test data
+Dockerfile
+leads.csv
+offer.json
+README.md
+
+# Python cache and virtual environment
+
+__pycache__
+app/__pycache__
+venv/
