@@ -3,6 +3,7 @@
 This project is an intelligent backend service designed to qualify and score sales leads. It accepts product information and a list of prospects (as a CSV), then uses a combination of rule-based logic and generative AI (Google Gemini) to assign a buying intent score (**High**, **Medium**, or **Low**) to each lead. The primary goal is to help sales teams save time by automatically prioritizing their outreach efforts.
 
 ***
+#### Demo Video: [Watch Video](https://drive.google.com/file/d/1ElRrF2_NXtFQ8zKIn1Xwz70EU6pIT1JT/view?usp=sharing)
 ## Tech Stack 🛠️
 
 * **Backend:** Python, Flask
